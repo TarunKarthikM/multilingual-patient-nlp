@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multilingual Patient NLP Framework | DSU CSE (AI&ML)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- Top Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-area">
+                <div class="dsu-badge">DSU · CSE (AI&ML)</div>
+                <div class="title-meta">
+                    <h1>Multilingual Code-Mixed Clinical NLP Framework</h1>
+                    <p class="subtitle">Patient Symptom & Risk-Indicator Extraction for Early Clinical Risk Assessment (SDG 3)</p>
+                </div>
+            </div>
+            <div class="academic-tag">
+                <span class="course-code">Course: 24AM3503 · Review-1</span>
+                <span class="guide-info">Guide: <strong>Prof. Shivanandan Roy</strong></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <button class="nav-tab active" onclick="switchTab('extraction-tab')">🏥 Live Clinical Triage & Extraction</button>
+            <button class="nav-tab" onclick="switchTab('benchmark-tab')">📊 Model Benchmark (CRF vs BiLSTM vs Transformers)</button>
+            <button class="nav-tab" onclick="switchTab('dataset-tab')">📁 Dataset Explorer & Annotation Schema</button>
+            <button class="nav-tab" onclick="switchTab('project-info-tab')">ℹ️ Project Scope & Team</button>
+        </div>
+    </nav>
+
+    <main class="main-container">
+        <!-- TAB 1: Live Clinical Triage & Extraction -->
+        <section id="extraction-tab" class="tab-content active">
+            <div class="grid-2col">
+                <!-- Left Column: Input & Controls -->
+                <div class="card input-card">
+                    <div class="card-header">
+                        <h2>Patient Communication Input</h2>
+                        <span class="badge badge-info">Multilingual / Code-Mixed</span>
+                    </div>
+
+                    <div class="presets-bar">
+                        <label>Sample Test Cases:</label>
+                        <div class="preset-buttons">
+                            <button class="preset-btn" onclick="loadPreset('hinglish_cardiac')">Hinglish: Cardiac Red-Flag</button>
+                            <button class="preset-btn" onclick="loadPreset('kanglish_fever')">Kanglish: Fever & Infection</button>
+                            <button class="preset-btn" onclick="loadPreset('tanglish_chest')">Tanglish: Chronic Cardiac</button>
+                            <button class="preset-btn" onclick="loadPreset('hinglish_stomach')">Hinglish: Severe Abdominal</button>
+                            <button class="preset-btn" onclick="loadPreset('english_resp')">English: Respiratory Risk</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="patient-text" rows="5" placeholder="Enter patient symptom description in Hinglish, Kanglish, Tanglish, or English... (e.g. 'Mujhe pichle 3 days se severe chest pain ho raha hai and I am a diabetic patient.')"></textarea>
+                    </div>
+
+                    <div class="control-row">
+                        <div class="model-select-group">
+                            <label for="model-select">Extraction Model:</label>
+                            <select id="model-select">
+                                {% for m in models %}
+                                <option value="{{ m }}" {% if m == 'Ensemble (Consensus)' %}selected{% endif %}>{{ m }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <button class="btn btn-primary" id="extract-btn" onclick="runExtraction()">
+                            <span class="btn-text">Extract Entities & Assess Risk</span>
+                            <span class="spinner" id="spinner" style="display:none;"></span>
+                        </button>
+                    </div>
+
+                    <!-- Entity Legend -->
+                    <div class="legend-box">
+                        <span class="legend-title">Target Schema:</span>
+                        <span class="entity-pill tag-symptom">SYMPTOM</span>
+                        <span class="entity-pill tag-risk">RISK_INDICATOR</span>
+                        <span class="entity-pill tag-severity">SEVERITY</span>
+                        <span class="entity-pill tag-duration">DURATION</span>
+                        <span class="entity-pill tag-body">BODY_PART</span>
+                    </div>
+                </div>
+
+                <!-- Right Column: Linguistic & Triage Meter -->
+                <div class="card triage-card">
+                    <div class="card-header">
+                        <h2>Clinical Risk & Linguistic Profile</h2>
+                        <span id="model-badge" class="badge badge-secondary">Ready</span>
+                    </div>
+
+                    <div id="welcome-state" class="empty-state">
+                        <div class="empty-icon">🩺</div>
+                        <h3>Clinical NLP Ready</h3>
+                        <p>Select a preset above or type a patient symptom description to extract clinical entities, detect code-mixing index, and compute early triage risk.</p>
+                    </div>
+
+                    <div id="results-panel" style="display:none;">
+                        <!-- Linguistic Info Card -->
+                        <div class="meta-stats-grid">
+                            <div class="stat-box">
+                                <span class="stat-label">Detected Language</span>
+                                <span class="stat-value" id="res-language">--</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-label">Code-Mixing Index (CMI)</span>
+                                <span class="stat-value" id="res-cmi">--</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-label">Total Entities</span>
+                                <span class="stat-value" id="res-entity-count">0</span>
+                            </div>
+                        </div>
+
+                        <!-- Risk Assessment Meter -->
+                        <div class="risk-meter-box" id="risk-box">
+                            <div class="risk-top">
+                                <div>
+                                    <span class="risk-title">Early Triage Stratification</span>
+                                    <h3 id="risk-tier" class="risk-tier-text">MODERATE</h3>
+                                </div>
+                                <div class="risk-score-circle">
+                                    <span id="risk-score-num">50</span>
+                                    <small>/ 100</small>
+                                </div>
+                            </div>
+                            <p class="risk-urgency" id="risk-action">Action recommendation</p>
+                            
+                            <div class="rationale-box">
+                                <strong>Clinical Rationale:</strong>
+                                <ul id="rationale-list"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Row: Annotated Output & Structured Findings -->
+            <div class="card results-card" id="entity-findings-card" style="display:none; margin-top: 1.5rem;">
+                <div class="card-header">
+                    <h2>Annotated Patient Text & Entity Highlights</h2>
+                    <button class="btn btn-sm btn-outline" onclick="copyJson()">Copy Structured JSON</button>
+                </div>
+                <div class="highlighted-text-box" id="highlighted-text"></div>
+
+                <div class="findings-grid">
+                    <div class="finding-column">
+                        <h4>Symptoms Extracted</h4>
+                        <div id="list-symptoms" class="entity-list"></div>
+                    </div>
+                    <div class="finding-column">
+                        <h4>Risk Indicators</h4>
+                        <div id="list-risk" class="entity-list"></div>
+                    </div>
+                    <div class="finding-column">
+                        <h4>Severity Modifiers</h4>
+                        <div id="list-severity" class="entity-list"></div>
+                    </div>
+                    <div class="finding-column">
+                        <h4>Duration Details</h4>
+                        <div id="list-duration" class="entity-list"></div>
+                    </div>
+                    <div class="finding-column">
+                        <h4>Anatomical / Body Parts</h4>
+                        <div id="list-body" class="entity-list"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 2: Model Benchmark -->
+        <section id="benchmark-tab" class="tab-content">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Comparative Performance Benchmark (Review-1 Evaluation)</h2>
+                    <span class="badge badge-success">Evaluated on Multilingual Code-Mixed Test Split</span>
+                </div>
+                <p class="section-desc">Comparing Baselines (CRF, BiLSTM-CRF) with Multilingual Transformers (IndicBERT, mBERT, XLM-RoBERTa) across entity-level Precision, Recall, and F1-score.</p>
+
+                <div class="table-responsive">
+                    <table class="benchmark-table">
+                        <thead>
+                            <tr>
+                                <th>Model Architecture</th>
+                                <th>Precision (%)</th>
+                                <th>Recall (%)</th>
+                                <th>Overall F1 (%)</th>
+                                <th>Hinglish F1</th>
+                                <th>Kanglish F1</th>
+                                <th>English F1</th>
+                                <th>Primary Strength / Deployment Suitability</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for b in benchmarks %}
+                            <tr {% if b.model_name.startswith('CRF') %}class="highlight-row"{% endif %}>
+                                <td><strong>{{ b.model_name }}</strong></td>
+                                <td>{{ "%.2f"|format(b.overall_precision) }}%</td>
+                                <td>{{ "%.2f"|format(b.overall_recall) }}%</td>
+                                <td><span class="f1-badge">{{ "%.2f"|format(b.overall_f1_score) }}%</span></td>
+                                <td>{{ b.language_breakdown.Hinglish.f1_score }}%</td>
+                                <td>{{ b.language_breakdown.Kanglish.f1_score }}%</td>
+                                <td>{{ b.language_breakdown.English.f1_score }}%</td>
+                                <td>
+                                    {% if 'CRF' in b.model_name and 'BiLSTM' not in b.model_name %}
+                                    Ultra-fast CPU inference & local edge deployment (97.79% F1)
+                                    {% elif 'BiLSTM' in b.model_name %}
+                                    Robust sub-character morphology & transliteration resistance
+                                    {% elif 'IndicBERT' in b.model_name %}
+                                    High Dravidian/Indo-Aryan vocabulary transfer (ai4bharat)
+                                    {% elif 'mBERT' in b.model_name %}
+                                    Balanced multi-script multilingual representations
+                                    {% elif 'XLM' in b.model_name %}
+                                    Strongest contextual capacity for cross-lingual zero-shot
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="benchmark-insights">
+                    <h3>Key Methodological Findings:</h3>
+                    <ul>
+                        <li><strong>Handling Code-Mixing:</strong> Sub-word and character-level embeddings significantly outperform standard dictionary lookups by gracefully handling spelling variations like <em>"dardddd"</em> and <em>"novoo"</em>.</li>
+                        <li><strong>Language Discrepancy:</strong> English achieves consistent 88-98% F1 across models, while Kanglish and Hinglish show strong gains when incorporating language-aware affixes and Indic tokenization.</li>
+                        <li><strong>Inference Latency:</strong> The CRF baseline operates in &lt; 5ms on CPU, making it ideal for edge telemedicine stations, while IndicBERT and XLM-RoBERTa deliver deep semantic contextualization.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 3: Dataset Explorer -->
+        <section id="dataset-tab" class="tab-content">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Multilingual Code-Mixed Clinical Dataset (Annotation Schema & Distribution)</h2>
+                    <span class="badge badge-info">Target: Low-Resource Healthcare NLP</span>
+                </div>
+                
+                <div class="stats-row">
+                    <div class="mini-stat-card">
+                        <span class="mini-stat-num">{{ summary.total_patient_records }}</span>
+                        <span class="mini-stat-label">Total Annotated Records</span>
+                    </div>
+                    <div class="mini-stat-card">
+                        <span class="mini-stat-num">{{ summary.train_records }} / {{ summary.val_records }} / {{ summary.test_records }}</span>
+                        <span class="mini-stat-label">Train / Val / Test Split</span>
+                    </div>
+                    <div class="mini-stat-card">
+                        <span class="mini-stat-num">{{ summary.total_tokens }}</span>
+                        <span class="mini-stat-label">Annotated Tokens</span>
+                    </div>
+                    <div class="mini-stat-card">
+                        <span class="mini-stat-num">5 Categories</span>
+                        <span class="mini-stat-label">Entity Label Space</span>
+                    </div>
+                </div>
+
+                <div class="grid-2col" style="margin-top: 1.5rem;">
+                    <div>
+                        <h3>Entity Distribution in Corpus</h3>
+                        <table class="data-table">
+                            <thead>
+                                <tr><th>Entity Type</th><th>Tag Format</th><th>Occurrences</th><th>Description</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="entity-pill tag-symptom">SYMPTOM</span></td>
+                                    <td><code>B-SYMPTOM, I-SYMPTOM</code></td>
+                                    <td>{{ summary.entity_distribution.SYMPTOM }}</td>
+                                    <td>Clinical complaint (fever, headache, sir dard, novu)</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="entity-pill tag-risk">RISK_INDICATOR</span></td>
+                                    <td><code>B-RISK_INDICATOR, I-RISK_INDICATOR</code></td>
+                                    <td>{{ summary.entity_distribution.RISK_INDICATOR }}</td>
+                                    <td>Pre-existing risk, comorbidities (diabetic, hypertension, smoker)</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="entity-pill tag-severity">SEVERITY</span></td>
+                                    <td><code>B-SEVERITY, I-SEVERITY</code></td>
+                                    <td>{{ summary.entity_distribution.SEVERITY }}</td>
+                                    <td>Intensity modifier (severe, bahut tez, mild, acute)</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="entity-pill tag-duration">DURATION</span></td>
+                                    <td><code>B-DURATION, I-DURATION</code></td>
+                                    <td>{{ summary.entity_distribution.DURATION }}</td>
+                                    <td>Time span (3 days se, pichle ek hafte se, 2 days inda)</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="entity-pill tag-body">BODY_PART</span></td>
+                                    <td><code>B-BODY_PART, I-BODY_PART</code></td>
+                                    <td>{{ summary.entity_distribution.BODY_PART }}</td>
+                                    <td>Anatomical location (chest, pet, thale, gala, left arm)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div>
+                        <h3>Language & Script Representation</h3>
+                        <table class="data-table">
+                            <thead>
+                                <tr><th>Language Variety</th><th>Script</th><th>Records</th><th>Sample Expression</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td><strong>Hinglish</strong></td><td>Latin + Devanagari</td><td>{{ summary.language_distribution.Hinglish }}</td><td><em>"pet mein severe cramping ho rahi hai"</em></td></tr>
+                                <tr><td><strong>Kanglish</strong></td><td>Latin + Kannada</td><td>{{ summary.language_distribution.Kanglish }}</td><td><em>"last 2 days inda severe fever ide"</em></td></tr>
+                                <tr><td><strong>Tanglish</strong></td><td>Latin + Tamil</td><td>{{ summary.language_distribution.Tanglish }}</td><td><em>"past 4 days ah severe chest pain irukku"</em></td></tr>
+                                <tr><td><strong>English</strong></td><td>Latin</td><td>{{ summary.language_distribution.English }}</td><td><em>"acute breathlessness and known diabetic"</em></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 4: Project Scope & Team Info -->
+        <section id="project-info-tab" class="tab-content">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Academic Project Information · Dayananda Sagar University</h2>
+                    <span class="badge badge-primary">Department of CSE (AI&ML)</span>
+                </div>
+                
+                <div class="team-grid">
+                    <div class="team-card">
+                        <h3>Student Contributors</h3>
+                        <ul>
+                            <li><strong>Amal Abraham</strong> — <code>ENG24AM0138</code> (Problem Definition)</li>
+                            <li><strong>Tarun Karthik M</strong> — <code>ENG24AM0303</code> (Methodology & References)</li>
+                            <li><strong>M Shrihari</strong> — <code>ENG24AM0344</code> (Objectives)</li>
+                            <li><strong>Sherin Joe</strong> — <code>ENG24AM0286</code> (Introduction & Literature Review)</li>
+                        </ul>
+                    </div>
+
+                    <div class="team-card">
+                        <h3>Faculty Supervision</h3>
+                        <p><strong>Prof. Shivanandan Roy</strong></p>
+                        <p>Assistant Professor, Dept of CSE (AI&ML)</p>
+                        <p>School of Engineering, Dayananda Sagar University</p>
+                        <p>Academic Year: 2026-2027</p>
+                    </div>
+                </div>
+
+                <div class="scope-grid" style="margin-top: 1.5rem;">
+                    <div class="scope-box scope-covered">
+                        <h4>Covered in Project Scope</h4>
+                        <ul>
+                            <li>Annotated multilingual code-mixed patient text dataset</li>
+                            <li>Preprocessing: language detection, text normalization, transliteration mapping</li>
+                            <li>Comparative evaluation of CRF, BiLSTM-CRF, mBERT, XLM-R, IndicBERT</li>
+                            <li>Evaluation across languages and code-mixing index (CMI)</li>
+                            <li>Early triage risk stratification aligned with SDG 3 (Good Health & Well-being)</li>
+                        </ul>
+                    </div>
+
+                    <div class="scope-box scope-not-covered">
+                        <h4>Explicitly Not Covered (Out of Scope)</h4>
+                        <ul>
+                            <li>Medical diagnosis or definitive disease prescription</li>
+                            <li>Pharmacological dosage or treatment recommendations</li>
+                            <li>Speech/audio or radiological image processing</li>
+                            <li>Direct EHR integration into hospital databases</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Dayananda Sagar University · School of Engineering · Department of Computer Science and Engineering (AI&ML)</p>
+        <p>Project: <em>A Multilingual Code-Mixed Dataset and NLP Framework for Patient Symptom and Risk-Indicator Extraction</em></p>
+    </footer>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

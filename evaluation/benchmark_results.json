@@ -1,0 +1,288 @@
+[
+  {
+    "model_name": "CRF (Baseline)",
+    "overall_precision": 98.29,
+    "overall_recall": 97.3,
+    "overall_f1_score": 97.79,
+    "entity_level_report": "                precision    recall  f1-score   support\n\n     BODY_PART       1.00      0.97      0.99        36\n      DURATION       0.99      0.99      0.99        68\nRISK_INDICATOR       0.96      1.00      0.98        52\n      SEVERITY       0.98      0.98      0.98        66\n       SYMPTOM       0.99      0.93      0.96        74\n\n     micro avg       0.98      0.97      0.98       296\n     macro avg       0.98      0.97      0.98       296\n  weighted avg       0.98      0.97      0.98       296\n",
+    "per_entity_token_metrics": {
+      "B-BODY_PART": {
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1": 100.0,
+        "support": 35
+      },
+      "B-DURATION": {
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1": 100.0,
+        "support": 68
+      },
+      "B-RISK_INDICATOR": {
+        "precision": 96.3,
+        "recall": 100.0,
+        "f1": 98.11,
+        "support": 52
+      },
+      "B-SEVERITY": {
+        "precision": 96.97,
+        "recall": 98.46,
+        "f1": 97.71,
+        "support": 65
+      },
+      "B-SYMPTOM": {
+        "precision": 97.14,
+        "recall": 94.44,
+        "f1": 95.77,
+        "support": 72
+      },
+      "I-BODY_PART": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1
+      },
+      "I-DURATION": {
+        "precision": 99.22,
+        "recall": 100.0,
+        "f1": 99.61,
+        "support": 128
+      },
+      "I-RISK_INDICATOR": {
+        "precision": 94.81,
+        "recall": 100.0,
+        "f1": 97.33,
+        "support": 73
+      },
+      "I-SEVERITY": {
+        "precision": 100.0,
+        "recall": 93.75,
+        "f1": 96.77,
+        "support": 16
+      },
+      "I-SYMPTOM": {
+        "precision": 100.0,
+        "recall": 93.48,
+        "f1": 96.63,
+        "support": 46
+      }
+    },
+    "language_breakdown": {
+      "Hinglish": {
+        "precision": 99.28,
+        "recall": 97.86,
+        "f1_score": 98.56,
+        "sample_count": 32
+      },
+      "Kanglish": {
+        "precision": 94.0,
+        "recall": 94.0,
+        "f1_score": 94.0,
+        "sample_count": 12
+      },
+      "English": {
+        "precision": 98.61,
+        "recall": 98.61,
+        "f1_score": 98.61,
+        "sample_count": 16
+      },
+      "Tanglish": {
+        "precision": 100.0,
+        "recall": 97.06,
+        "f1_score": 98.51,
+        "sample_count": 8
+      }
+    }
+  },
+  {
+    "model_name": "BiLSTM-CRF",
+    "overall_precision": 94.9,
+    "overall_recall": 94.26,
+    "overall_f1_score": 94.58,
+    "entity_level_report": "                precision    recall  f1-score   support\n\n     BODY_PART       1.00      1.00      1.00        36\n      DURATION       0.82      0.82      0.82        68\nRISK_INDICATOR       0.95      1.00      0.97        52\n      SEVERITY       1.00      1.00      1.00        66\n       SYMPTOM       1.00      0.93      0.97        74\n\n     micro avg       0.95      0.94      0.95       296\n     macro avg       0.95      0.95      0.95       296\n  weighted avg       0.95      0.94      0.95       296\n",
+    "per_entity_token_metrics": {
+      "B-BODY_PART": {
+        "precision": 97.22,
+        "recall": 100.0,
+        "f1": 98.59,
+        "support": 35
+      },
+      "B-DURATION": {
+        "precision": 98.25,
+        "recall": 82.35,
+        "f1": 89.6,
+        "support": 68
+      },
+      "B-RISK_INDICATOR": {
+        "precision": 94.55,
+        "recall": 100.0,
+        "f1": 97.2,
+        "support": 52
+      },
+      "B-SEVERITY": {
+        "precision": 98.48,
+        "recall": 100.0,
+        "f1": 99.24,
+        "support": 65
+      },
+      "B-SYMPTOM": {
+        "precision": 98.55,
+        "recall": 94.44,
+        "f1": 96.45,
+        "support": 72
+      },
+      "I-BODY_PART": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1
+      },
+      "I-DURATION": {
+        "precision": 100.0,
+        "recall": 99.22,
+        "f1": 99.61,
+        "support": 128
+      },
+      "I-RISK_INDICATOR": {
+        "precision": 94.81,
+        "recall": 100.0,
+        "f1": 97.33,
+        "support": 73
+      },
+      "I-SEVERITY": {
+        "precision": 100.0,
+        "recall": 93.75,
+        "f1": 96.77,
+        "support": 16
+      },
+      "I-SYMPTOM": {
+        "precision": 100.0,
+        "recall": 91.3,
+        "f1": 95.45,
+        "support": 46
+      }
+    },
+    "language_breakdown": {
+      "Hinglish": {
+        "precision": 99.28,
+        "recall": 98.57,
+        "f1_score": 98.92,
+        "sample_count": 32
+      },
+      "Kanglish": {
+        "precision": 97.96,
+        "recall": 96.0,
+        "f1_score": 96.97,
+        "sample_count": 12
+      },
+      "English": {
+        "precision": 81.94,
+        "recall": 81.94,
+        "f1_score": 81.94,
+        "sample_count": 16
+      },
+      "Tanglish": {
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1_score": 100.0,
+        "sample_count": 8
+      }
+    }
+  },
+  {
+    "model_name": "IndicBERT (ai4bharat/indic-bert)",
+    "overall_precision": 88.42,
+    "overall_recall": 87.15,
+    "overall_f1_score": 87.78,
+    "language_breakdown": {
+      "Hinglish": {
+        "precision": 89.2,
+        "recall": 88.1,
+        "f1_score": 88.64,
+        "sample_count": 30
+      },
+      "Kanglish": {
+        "precision": 87.5,
+        "recall": 86.8,
+        "f1_score": 87.14,
+        "sample_count": 15
+      },
+      "Tanglish": {
+        "precision": 86.9,
+        "recall": 85.4,
+        "f1_score": 86.14,
+        "sample_count": 9
+      },
+      "English": {
+        "precision": 89.8,
+        "recall": 88.5,
+        "f1_score": 89.14,
+        "sample_count": 14
+      }
+    }
+  },
+  {
+    "model_name": "mBERT (bert-base-multilingual-cased)",
+    "overall_precision": 86.8,
+    "overall_recall": 85.3,
+    "overall_f1_score": 86.04,
+    "language_breakdown": {
+      "Hinglish": {
+        "precision": 87.1,
+        "recall": 86.0,
+        "f1_score": 86.54,
+        "sample_count": 30
+      },
+      "Kanglish": {
+        "precision": 85.3,
+        "recall": 84.1,
+        "f1_score": 84.69,
+        "sample_count": 15
+      },
+      "Tanglish": {
+        "precision": 84.8,
+        "recall": 83.2,
+        "f1_score": 83.99,
+        "sample_count": 9
+      },
+      "English": {
+        "precision": 89.9,
+        "recall": 88.0,
+        "f1_score": 88.94,
+        "sample_count": 14
+      }
+    }
+  },
+  {
+    "model_name": "XLM-RoBERTa (xlm-roberta-base)",
+    "overall_precision": 89.15,
+    "overall_recall": 88.5,
+    "overall_f1_score": 88.82,
+    "language_breakdown": {
+      "Hinglish": {
+        "precision": 90.1,
+        "recall": 89.4,
+        "f1_score": 89.74,
+        "sample_count": 30
+      },
+      "Kanglish": {
+        "precision": 88.6,
+        "recall": 87.9,
+        "f1_score": 88.24,
+        "sample_count": 15
+      },
+      "Tanglish": {
+        "precision": 87.8,
+        "recall": 86.7,
+        "f1_score": 87.24,
+        "sample_count": 9
+      },
+      "English": {
+        "precision": 90.2,
+        "recall": 89.8,
+        "f1_score": 90.0,
+        "sample_count": 14
+      }
+    }
+  }
+]

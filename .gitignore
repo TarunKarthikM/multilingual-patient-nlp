@@ -1,0 +1,20 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyTorch & model checkpoints
+*.pt
+*.crfsuite
+
+# Virtual environments
+venv/
+env/
+.env
+
+# VS Code & IDE files
+.idea/
+.DS_Store
+
+# Streamlit runtime
+.streamlit/

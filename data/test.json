@@ -1,0 +1,4898 @@
+[
+  {
+    "id": "PAT_0004",
+    "text": "Mummy ko high blood pressure ki problem hai aur kal raat se acute breathlessness aur dry cough hai.",
+    "language": "Hinglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 9,
+        "end": 28,
+        "label": "RISK_INDICATOR",
+        "text": "high blood pressure"
+      },
+      {
+        "start": 47,
+        "end": 59,
+        "label": "DURATION",
+        "text": "kal raat se"
+      },
+      {
+        "start": 60,
+        "end": 65,
+        "label": "SEVERITY",
+        "text": "acute"
+      },
+      {
+        "start": 66,
+        "end": 80,
+        "label": "SYMPTOM",
+        "text": "breathlessness"
+      },
+      {
+        "start": 85,
+        "end": 94,
+        "label": "SYMPTOM",
+        "text": "dry cough"
+      }
+    ],
+    "tokens": [
+      "Mummy",
+      "ko",
+      "high",
+      "blood",
+      "pressure",
+      "ki",
+      "problem",
+      "hai",
+      "aur",
+      "kal",
+      "raat",
+      "se",
+      "acute",
+      "breathlessness",
+      "aur",
+      "dry",
+      "cough",
+      "hai",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "O",
+      "B-SYMPTOM",
+      "I-SYMPTOM",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0128",
+    "text": "Patient is hypertensive, 3 days se se halka halka joint pain aur weakness feel ho rahi hai.",
+    "language": "Hinglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 11,
+        "end": 23,
+        "label": "RISK_INDICATOR",
+        "text": "hypertensive"
+      },
+      {
+        "start": 25,
+        "end": 34,
+        "label": "DURATION",
+        "text": "3 days se"
+      },
+      {
+        "start": 38,
+        "end": 49,
+        "label": "SEVERITY",
+        "text": "halka halka"
+      },
+      {
+        "start": 50,
+        "end": 60,
+        "label": "SYMPTOM",
+        "text": "joint pain"
+      }
+    ],
+    "tokens": [
+      "Patient",
+      "is",
+      "hypertensive",
+      ",",
+      "3",
+      "days",
+      "se",
+      "se",
+      "halka",
+      "halka",
+      "joint",
+      "pain",
+      "aur",
+      "weakness",
+      "feel",
+      "ho",
+      "rahi",
+      "hai",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "O",
+      "B-SEVERITY",
+      "I-SEVERITY",
+      "B-SYMPTOM",
+      "I-SYMPTOM",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0166",
+    "text": "Doctor sahab, kamar mein bahut tez kamar dard hai 3 days se, patient ko chronic smoker bhi hai.",
+    "language": "Hinglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 14,
+        "end": 19,
+        "label": "BODY_PART",
+        "text": "kamar"
+      },
+      {
+        "start": 25,
+        "end": 34,
+        "label": "SEVERITY",
+        "text": "bahut tez"
+      },
+      {
+        "start": 35,
+        "end": 45,
+        "label": "SYMPTOM",
+        "text": "kamar dard"
+      },
+      {
+        "start": 50,
+        "end": 59,
+        "label": "DURATION",
+        "text": "3 days se"
+      },
+      {
+        "start": 72,
+        "end": 86,
+        "label": "RISK_INDICATOR",
+        "text": "chronic smoker"
+      }
+    ],
+    "tokens": [
+      "Doctor",
+      "sahab",
+      ",",
+      "kamar",
+      "mein",
+      "bahut",
+      "tez",
+      "kamar",
+      "dard",
+      "hai",
+      "3",
+      "days",
+      "se",
+      ",",
+      "patient",
+      "ko",
+      "chronic",
+      "smoker",
+      "bhi",
+      "hai",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "B-BODY_PART",
+      "O",
+      "B-SEVERITY",
+      "I-SEVERITY",
+      "B-SYMPTOM",
+      "I-SYMPTOM",
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "O",
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0245",
+    "text": "Doctor sahab, body mein bohot zyada kampa hai subah se, patient ko asthma patient bhi hai.",
+    "language": "Hinglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 14,
+        "end": 18,
+        "label": "BODY_PART",
+        "text": "body"
+      },
+      {
+        "start": 24,
+        "end": 35,
+        "label": "SEVERITY",
+        "text": "bohot zyada"
+      },
+      {
+        "start": 36,
+        "end": 41,
+        "label": "SYMPTOM",
+        "text": "kampa"
+      },
+      {
+        "start": 46,
+        "end": 54,
+        "label": "DURATION",
+        "text": "subah se"
+      },
+      {
+        "start": 67,
+        "end": 81,
+        "label": "RISK_INDICATOR",
+        "text": "asthma patient"
+      }
+    ],
+    "tokens": [
+      "Doctor",
+      "sahab",
+      ",",
+      "body",
+      "mein",
+      "bohot",
+      "zyada",
+      "kampa",
+      "hai",
+      "subah",
+      "se",
+      ",",
+      "patient",
+      "ko",
+      "asthma",
+      "patient",
+      "bhi",
+      "hai",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "B-BODY_PART",
+      "O",
+      "B-SEVERITY",
+      "I-SEVERITY",
+      "B-SYMPTOM",
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "O",
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0072",
+    "text": "Patient ge hypertensive ide, last 2 days inda unbearable sir dard barthide.",
+    "language": "Kanglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 11,
+        "end": 23,
+        "label": "RISK_INDICATOR",
+        "text": "hypertensive"
+      },
+      {
+        "start": 29,
+        "end": 45,
+        "label": "DURATION",
+        "text": "last 2 days inda"
+      },
+      {
+        "start": 46,
+        "end": 56,
+        "label": "SEVERITY",
+        "text": "unbearable"
+      },
+      {
+        "start": 57,
+        "end": 65,
+        "label": "SYMPTOM",
+        "text": "sir dard"
+      }
+    ],
+    "tokens": [
+      "Patient",
+      "ge",
+      "hypertensive",
+      "ide",
+      ",",
+      "last",
+      "2",
+      "days",
+      "inda",
+      "unbearable",
+      "sir",
+      "dard",
+      "barthide",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "O",
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "I-SYMPTOM",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0095",
+    "text": "Experiencing intense kamar dard for 5 days, patient is a blood in cough.",
+    "language": "English",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 13,
+        "end": 20,
+        "label": "SEVERITY",
+        "text": "intense"
+      },
+      {
+        "start": 21,
+        "end": 31,
+        "label": "SYMPTOM",
+        "text": "kamar dard"
+      },
+      {
+        "start": 32,
+        "end": 42,
+        "label": "DURATION",
+        "text": "for 5 days"
+      },
+      {
+        "start": 57,
+        "end": 71,
+        "label": "RISK_INDICATOR",
+        "text": "blood in cough"
+      }
+    ],
+    "tokens": [
+      "Experiencing",
+      "intense",
+      "kamar",
+      "dard",
+      "for",
+      "5",
+      "days",
+      ",",
+      "patient",
+      "is",
+      "a",
+      "blood",
+      "in",
+      "cough",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "I-SYMPTOM",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O"
+    ],
+    "code_mixing_detected": false
+  },
+  {
+    "id": "PAT_0049",
+    "text": "Doctor sahab, gala mein acute gala kharab hai do hafte se, patient ko chronic smoker bhi hai.",
+    "language": "Hinglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 14,
+        "end": 18,
+        "label": "BODY_PART",
+        "text": "gala"
+      },
+      {
+        "start": 24,
+        "end": 29,
+        "label": "SEVERITY",
+        "text": "acute"
+      },
+      {
+        "start": 30,
+        "end": 41,
+        "label": "SYMPTOM",
+        "text": "gala kharab"
+      },
+      {
+        "start": 46,
+        "end": 57,
+        "label": "DURATION",
+        "text": "do hafte se"
+      },
+      {
+        "start": 70,
+        "end": 84,
+        "label": "RISK_INDICATOR",
+        "text": "chronic smoker"
+      }
+    ],
+    "tokens": [
+      "Doctor",
+      "sahab",
+      ",",
+      "gala",
+      "mein",
+      "acute",
+      "gala",
+      "kharab",
+      "hai",
+      "do",
+      "hafte",
+      "se",
+      ",",
+      "patient",
+      "ko",
+      "chronic",
+      "smoker",
+      "bhi",
+      "hai",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "B-BODY_PART",
+      "O",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "I-SYMPTOM",
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "O",
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0343",
+    "text": "Sir hotte me severe hotte novu hai kal raat se and I am a high blood pressure.",
+    "language": "Hinglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 4,
+        "end": 9,
+        "label": "BODY_PART",
+        "text": "hotte"
+      },
+      {
+        "start": 13,
+        "end": 19,
+        "label": "SEVERITY",
+        "text": "severe"
+      },
+      {
+        "start": 20,
+        "end": 30,
+        "label": "SYMPTOM",
+        "text": "hotte novu"
+      },
+      {
+        "start": 35,
+        "end": 46,
+        "label": "DURATION",
+        "text": "kal raat se"
+      },
+      {
+        "start": 58,
+        "end": 77,
+        "label": "RISK_INDICATOR",
+        "text": "high blood pressure"
+      }
+    ],
+    "tokens": [
+      "Sir",
+      "hotte",
+      "me",
+      "severe",
+      "hotte",
+      "novu",
+      "hai",
+      "kal",
+      "raat",
+      "se",
+      "and",
+      "I",
+      "am",
+      "a",
+      "high",
+      "blood",
+      "pressure",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "B-BODY_PART",
+      "O",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "I-SYMPTOM",
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0206",
+    "text": "Experiencing moderate kaalu novu since yesterday, patient is a hypertensive.",
+    "language": "English",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 13,
+        "end": 21,
+        "label": "SEVERITY",
+        "text": "moderate"
+      },
+      {
+        "start": 22,
+        "end": 32,
+        "label": "SYMPTOM",
+        "text": "kaalu novu"
+      },
+      {
+        "start": 33,
+        "end": 48,
+        "label": "DURATION",
+        "text": "since yesterday"
+      },
+      {
+        "start": 63,
+        "end": 75,
+        "label": "RISK_INDICATOR",
+        "text": "hypertensive"
+      }
+    ],
+    "tokens": [
+      "Experiencing",
+      "moderate",
+      "kaalu",
+      "novu",
+      "since",
+      "yesterday",
+      ",",
+      "patient",
+      "is",
+      "a",
+      "hypertensive",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "I-SYMPTOM",
+      "B-DURATION",
+      "I-DURATION",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "O"
+    ],
+    "code_mixing_detected": false
+  },
+  {
+    "id": "PAT_0045",
+    "text": "Complaints of excruciating back pain localized to back for past 2 weeks, diagnosed with hypertensive.",
+    "language": "English",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 14,
+        "end": 26,
+        "label": "SEVERITY",
+        "text": "excruciating"
+      },
+      {
+        "start": 27,
+        "end": 36,
+        "label": "SYMPTOM",
+        "text": "back pain"
+      },
+      {
+        "start": 50,
+        "end": 54,
+        "label": "BODY_PART",
+        "text": "back"
+      },
+      {
+        "start": 55,
+        "end": 71,
+        "label": "DURATION",
+        "text": "for past 2 weeks"
+      },
+      {
+        "start": 88,
+        "end": 100,
+        "label": "RISK_INDICATOR",
+        "text": "hypertensive"
+      }
+    ],
+    "tokens": [
+      "Complaints",
+      "of",
+      "excruciating",
+      "back",
+      "pain",
+      "localized",
+      "to",
+      "back",
+      "for",
+      "past",
+      "2",
+      "weeks",
+      ",",
+      "diagnosed",
+      "with",
+      "hypertensive",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "I-SYMPTOM",
+      "O",
+      "O",
+      "B-BODY_PART",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "O",
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "O"
+    ],
+    "code_mixing_detected": false
+  },
+  {
+    "id": "PAT_0168",
+    "text": "Pichle ek hafte se kamar dard bohot badh gaya hai, especially in kamar.",
+    "language": "Hinglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 7,
+        "end": 18,
+        "label": "DURATION",
+        "text": "ek hafte se"
+      },
+      {
+        "start": 19,
+        "end": 29,
+        "label": "SYMPTOM",
+        "text": "kamar dard"
+      },
+      {
+        "start": 65,
+        "end": 70,
+        "label": "BODY_PART",
+        "text": "kamar"
+      }
+    ],
+    "tokens": [
+      "Pichle",
+      "ek",
+      "hafte",
+      "se",
+      "kamar",
+      "dard",
+      "bohot",
+      "badh",
+      "gaya",
+      "hai",
+      ",",
+      "especially",
+      "in",
+      "kamar",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "B-SYMPTOM",
+      "I-SYMPTOM",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-BODY_PART",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0264",
+    "text": "Patient ku on blood thinners irukku, kalaila irundhu mild swelling irukku.",
+    "language": "Tanglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 11,
+        "end": 28,
+        "label": "RISK_INDICATOR",
+        "text": "on blood thinners"
+      },
+      {
+        "start": 37,
+        "end": 52,
+        "label": "DURATION",
+        "text": "kalaila irundhu"
+      },
+      {
+        "start": 53,
+        "end": 57,
+        "label": "SEVERITY",
+        "text": "mild"
+      },
+      {
+        "start": 58,
+        "end": 66,
+        "label": "SYMPTOM",
+        "text": "swelling"
+      }
+    ],
+    "tokens": [
+      "Patient",
+      "ku",
+      "on",
+      "blood",
+      "thinners",
+      "irukku",
+      ",",
+      "kalaila",
+      "irundhu",
+      "mild",
+      "swelling",
+      "irukku",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O",
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0219",
+    "text": "Doctor sahab, kaalu mein bohot zyada kaalu novu hai do hafte se, patient ko pregnant 7 months bhi hai.",
+    "language": "Hinglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 14,
+        "end": 19,
+        "label": "BODY_PART",
+        "text": "kaalu"
+      },
+      {
+        "start": 25,
+        "end": 36,
+        "label": "SEVERITY",
+        "text": "bohot zyada"
+      },
+      {
+        "start": 37,
+        "end": 47,
+        "label": "SYMPTOM",
+        "text": "kaalu novu"
+      },
+      {
+        "start": 52,
+        "end": 63,
+        "label": "DURATION",
+        "text": "do hafte se"
+      },
+      {
+        "start": 76,
+        "end": 93,
+        "label": "RISK_INDICATOR",
+        "text": "pregnant 7 months"
+      }
+    ],
+    "tokens": [
+      "Doctor",
+      "sahab",
+      ",",
+      "kaalu",
+      "mein",
+      "bohot",
+      "zyada",
+      "kaalu",
+      "novu",
+      "hai",
+      "do",
+      "hafte",
+      "se",
+      ",",
+      "patient",
+      "ko",
+      "pregnant",
+      "7",
+      "months",
+      "bhi",
+      "hai",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "B-BODY_PART",
+      "O",
+      "B-SEVERITY",
+      "I-SEVERITY",
+      "B-SYMPTOM",
+      "I-SYMPTOM",
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "O",
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0208",
+    "text": "Mummy ko kal raat se acute swelling hai aur unko asthma patient ki history hai.",
+    "language": "Hinglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 9,
+        "end": 20,
+        "label": "DURATION",
+        "text": "kal raat se"
+      },
+      {
+        "start": 21,
+        "end": 26,
+        "label": "SEVERITY",
+        "text": "acute"
+      },
+      {
+        "start": 27,
+        "end": 35,
+        "label": "SYMPTOM",
+        "text": "swelling"
+      },
+      {
+        "start": 49,
+        "end": 63,
+        "label": "RISK_INDICATOR",
+        "text": "asthma patient"
+      }
+    ],
+    "tokens": [
+      "Mummy",
+      "ko",
+      "kal",
+      "raat",
+      "se",
+      "acute",
+      "swelling",
+      "hai",
+      "aur",
+      "unko",
+      "asthma",
+      "patient",
+      "ki",
+      "history",
+      "hai",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "O",
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0328",
+    "text": "Nanage ninne inda swalpa saas lene mein dikkat aagide, mathu chest novu thumba ide.",
+    "language": "Kanglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 7,
+        "end": 17,
+        "label": "DURATION",
+        "text": "ninne inda"
+      },
+      {
+        "start": 18,
+        "end": 24,
+        "label": "SEVERITY",
+        "text": "swalpa"
+      },
+      {
+        "start": 25,
+        "end": 46,
+        "label": "SYMPTOM",
+        "text": "saas lene mein dikkat"
+      },
+      {
+        "start": 61,
+        "end": 66,
+        "label": "BODY_PART",
+        "text": "chest"
+      }
+    ],
+    "tokens": [
+      "Nanage",
+      "ninne",
+      "inda",
+      "swalpa",
+      "saas",
+      "lene",
+      "mein",
+      "dikkat",
+      "aagide",
+      ",",
+      "mathu",
+      "chest",
+      "novu",
+      "thumba",
+      "ide",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "I-SYMPTOM",
+      "I-SYMPTOM",
+      "I-SYMPTOM",
+      "O",
+      "O",
+      "O",
+      "B-BODY_PART",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0313",
+    "text": "Doctor sahab, sir mein bohot zyada sir dard hai pichle 2 din se, patient ko on blood thinners bhi hai.",
+    "language": "Hinglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 14,
+        "end": 17,
+        "label": "BODY_PART",
+        "text": "sir"
+      },
+      {
+        "start": 23,
+        "end": 34,
+        "label": "SEVERITY",
+        "text": "bohot zyada"
+      },
+      {
+        "start": 35,
+        "end": 43,
+        "label": "SYMPTOM",
+        "text": "sir dard"
+      },
+      {
+        "start": 48,
+        "end": 63,
+        "label": "DURATION",
+        "text": "pichle 2 din se"
+      },
+      {
+        "start": 76,
+        "end": 93,
+        "label": "RISK_INDICATOR",
+        "text": "on blood thinners"
+      }
+    ],
+    "tokens": [
+      "Doctor",
+      "sahab",
+      ",",
+      "sir",
+      "mein",
+      "bohot",
+      "zyada",
+      "sir",
+      "dard",
+      "hai",
+      "pichle",
+      "2",
+      "din",
+      "se",
+      ",",
+      "patient",
+      "ko",
+      "on",
+      "blood",
+      "thinners",
+      "bhi",
+      "hai",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "B-BODY_PART",
+      "O",
+      "B-SEVERITY",
+      "I-SEVERITY",
+      "B-SYMPTOM",
+      "I-SYMPTOM",
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "O",
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0448",
+    "text": "Experiencing slight cough since morning, patient is a blood in cough.",
+    "language": "English",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 13,
+        "end": 19,
+        "label": "SEVERITY",
+        "text": "slight"
+      },
+      {
+        "start": 20,
+        "end": 25,
+        "label": "SYMPTOM",
+        "text": "cough"
+      },
+      {
+        "start": 26,
+        "end": 39,
+        "label": "DURATION",
+        "text": "since morning"
+      },
+      {
+        "start": 63,
+        "end": 68,
+        "label": "SYMPTOM",
+        "text": "cough"
+      }
+    ],
+    "tokens": [
+      "Experiencing",
+      "slight",
+      "cough",
+      "since",
+      "morning",
+      ",",
+      "patient",
+      "is",
+      "a",
+      "blood",
+      "in",
+      "cough",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "B-DURATION",
+      "I-DURATION",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SYMPTOM",
+      "O"
+    ],
+    "code_mixing_detected": false
+  },
+  {
+    "id": "PAT_0419",
+    "text": "Patient ku hypertensive irukku, one month ah mild back pain irukku.",
+    "language": "Tanglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 11,
+        "end": 23,
+        "label": "RISK_INDICATOR",
+        "text": "hypertensive"
+      },
+      {
+        "start": 32,
+        "end": 44,
+        "label": "DURATION",
+        "text": "one month ah"
+      },
+      {
+        "start": 45,
+        "end": 49,
+        "label": "SEVERITY",
+        "text": "mild"
+      },
+      {
+        "start": 50,
+        "end": 59,
+        "label": "SYMPTOM",
+        "text": "back pain"
+      }
+    ],
+    "tokens": [
+      "Patient",
+      "ku",
+      "hypertensive",
+      "irukku",
+      ",",
+      "one",
+      "month",
+      "ah",
+      "mild",
+      "back",
+      "pain",
+      "irukku",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "O",
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "I-SYMPTOM",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0388",
+    "text": "Pichle subah se swelling bohot badh gaya hai, especially in leg.",
+    "language": "Hinglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 7,
+        "end": 15,
+        "label": "DURATION",
+        "text": "subah se"
+      },
+      {
+        "start": 16,
+        "end": 24,
+        "label": "SYMPTOM",
+        "text": "swelling"
+      },
+      {
+        "start": 60,
+        "end": 63,
+        "label": "BODY_PART",
+        "text": "leg"
+      }
+    ],
+    "tokens": [
+      "Pichle",
+      "subah",
+      "se",
+      "swelling",
+      "bohot",
+      "badh",
+      "gaya",
+      "hai",
+      ",",
+      "especially",
+      "in",
+      "leg",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "B-SYMPTOM",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-BODY_PART",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0346",
+    "text": "Enaku kalaila irundhu adhigama chakkarr irukku, sir romba valikuthu.",
+    "language": "Tanglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 6,
+        "end": 21,
+        "label": "DURATION",
+        "text": "kalaila irundhu"
+      },
+      {
+        "start": 22,
+        "end": 30,
+        "label": "SEVERITY",
+        "text": "adhigama"
+      },
+      {
+        "start": 31,
+        "end": 39,
+        "label": "SYMPTOM",
+        "text": "chakkarr"
+      },
+      {
+        "start": 48,
+        "end": 51,
+        "label": "BODY_PART",
+        "text": "sir"
+      }
+    ],
+    "tokens": [
+      "Enaku",
+      "kalaila",
+      "irundhu",
+      "adhigama",
+      "chakkarr",
+      "irukku",
+      ",",
+      "sir",
+      "romba",
+      "valikuthu",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "O",
+      "O",
+      "B-BODY_PART",
+      "O",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0433",
+    "text": "Doctor sahab, leg mein halka halka swelling hai subah se, patient ko pregnant 7 months bhi hai.",
+    "language": "Hinglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 14,
+        "end": 17,
+        "label": "BODY_PART",
+        "text": "leg"
+      },
+      {
+        "start": 23,
+        "end": 34,
+        "label": "SEVERITY",
+        "text": "halka halka"
+      },
+      {
+        "start": 35,
+        "end": 43,
+        "label": "SYMPTOM",
+        "text": "swelling"
+      },
+      {
+        "start": 48,
+        "end": 56,
+        "label": "DURATION",
+        "text": "subah se"
+      },
+      {
+        "start": 69,
+        "end": 86,
+        "label": "RISK_INDICATOR",
+        "text": "pregnant 7 months"
+      }
+    ],
+    "tokens": [
+      "Doctor",
+      "sahab",
+      ",",
+      "leg",
+      "mein",
+      "halka",
+      "halka",
+      "swelling",
+      "hai",
+      "subah",
+      "se",
+      ",",
+      "patient",
+      "ko",
+      "pregnant",
+      "7",
+      "months",
+      "bhi",
+      "hai",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "B-BODY_PART",
+      "O",
+      "B-SEVERITY",
+      "I-SEVERITY",
+      "B-SYMPTOM",
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "O",
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0152",
+    "text": "Mummy ko do hafte se halka halka chest pain hai aur unko pregnant 7 months ki history hai.",
+    "language": "Hinglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 9,
+        "end": 20,
+        "label": "DURATION",
+        "text": "do hafte se"
+      },
+      {
+        "start": 21,
+        "end": 32,
+        "label": "SEVERITY",
+        "text": "halka halka"
+      },
+      {
+        "start": 33,
+        "end": 43,
+        "label": "SYMPTOM",
+        "text": "chest pain"
+      },
+      {
+        "start": 57,
+        "end": 74,
+        "label": "RISK_INDICATOR",
+        "text": "pregnant 7 months"
+      }
+    ],
+    "tokens": [
+      "Mummy",
+      "ko",
+      "do",
+      "hafte",
+      "se",
+      "halka",
+      "halka",
+      "chest",
+      "pain",
+      "hai",
+      "aur",
+      "unko",
+      "pregnant",
+      "7",
+      "months",
+      "ki",
+      "history",
+      "hai",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "B-SEVERITY",
+      "I-SEVERITY",
+      "B-SYMPTOM",
+      "I-SYMPTOM",
+      "O",
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0405",
+    "text": "Patient ku previous heart attack irukku, kalaila irundhu severe back pain irukku.",
+    "language": "Tanglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 11,
+        "end": 32,
+        "label": "RISK_INDICATOR",
+        "text": "previous heart attack"
+      },
+      {
+        "start": 41,
+        "end": 56,
+        "label": "DURATION",
+        "text": "kalaila irundhu"
+      },
+      {
+        "start": 57,
+        "end": 63,
+        "label": "SEVERITY",
+        "text": "severe"
+      },
+      {
+        "start": 64,
+        "end": 73,
+        "label": "SYMPTOM",
+        "text": "back pain"
+      }
+    ],
+    "tokens": [
+      "Patient",
+      "ku",
+      "previous",
+      "heart",
+      "attack",
+      "irukku",
+      ",",
+      "kalaila",
+      "irundhu",
+      "severe",
+      "back",
+      "pain",
+      "irukku",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O",
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "I-SYMPTOM",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0173",
+    "text": "Mummy ko ek hafte se mild saas lene mein dikkat hai aur unko diabetic patient ki history hai.",
+    "language": "Hinglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 9,
+        "end": 20,
+        "label": "DURATION",
+        "text": "ek hafte se"
+      },
+      {
+        "start": 21,
+        "end": 25,
+        "label": "SEVERITY",
+        "text": "mild"
+      },
+      {
+        "start": 26,
+        "end": 47,
+        "label": "SYMPTOM",
+        "text": "saas lene mein dikkat"
+      },
+      {
+        "start": 61,
+        "end": 77,
+        "label": "RISK_INDICATOR",
+        "text": "diabetic patient"
+      }
+    ],
+    "tokens": [
+      "Mummy",
+      "ko",
+      "ek",
+      "hafte",
+      "se",
+      "mild",
+      "saas",
+      "lene",
+      "mein",
+      "dikkat",
+      "hai",
+      "aur",
+      "unko",
+      "diabetic",
+      "patient",
+      "ki",
+      "history",
+      "hai",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "I-SYMPTOM",
+      "I-SYMPTOM",
+      "I-SYMPTOM",
+      "O",
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0378",
+    "text": "Pichle kal raat se chest pain bohot badh gaya hai, especially in chest.",
+    "language": "Hinglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 7,
+        "end": 18,
+        "label": "DURATION",
+        "text": "kal raat se"
+      },
+      {
+        "start": 19,
+        "end": 29,
+        "label": "SYMPTOM",
+        "text": "chest pain"
+      },
+      {
+        "start": 65,
+        "end": 70,
+        "label": "BODY_PART",
+        "text": "chest"
+      }
+    ],
+    "tokens": [
+      "Pichle",
+      "kal",
+      "raat",
+      "se",
+      "chest",
+      "pain",
+      "bohot",
+      "badh",
+      "gaya",
+      "hai",
+      ",",
+      "especially",
+      "in",
+      "chest",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "B-SYMPTOM",
+      "I-SYMPTOM",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-BODY_PART",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0008",
+    "text": "Nanage last 2 days inda severe fever ide and throat full infection aagide.",
+    "language": "Kanglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 7,
+        "end": 22,
+        "label": "DURATION",
+        "text": "last 2 days inda"
+      },
+      {
+        "start": 23,
+        "end": 29,
+        "label": "SEVERITY",
+        "text": "severe"
+      },
+      {
+        "start": 30,
+        "end": 35,
+        "label": "SYMPTOM",
+        "text": "fever"
+      },
+      {
+        "start": 44,
+        "end": 50,
+        "label": "BODY_PART",
+        "text": "throat"
+      },
+      {
+        "start": 56,
+        "end": 65,
+        "label": "SYMPTOM",
+        "text": "infection"
+      }
+    ],
+    "tokens": [
+      "Nanage",
+      "last",
+      "2",
+      "days",
+      "inda",
+      "severe",
+      "fever",
+      "ide",
+      "and",
+      "throat",
+      "full",
+      "infection",
+      "aagide",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "I-SEVERITY",
+      "I-SYMPTOM",
+      "O",
+      "O",
+      "I-BODY_PART",
+      "O",
+      "I-SYMPTOM",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0439",
+    "text": "Complaints of acute chest pain localized to chest for past 2 weeks, diagnosed with on blood thinners.",
+    "language": "English",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 14,
+        "end": 19,
+        "label": "SEVERITY",
+        "text": "acute"
+      },
+      {
+        "start": 20,
+        "end": 30,
+        "label": "SYMPTOM",
+        "text": "chest pain"
+      },
+      {
+        "start": 44,
+        "end": 49,
+        "label": "BODY_PART",
+        "text": "chest"
+      },
+      {
+        "start": 50,
+        "end": 66,
+        "label": "DURATION",
+        "text": "for past 2 weeks"
+      },
+      {
+        "start": 83,
+        "end": 100,
+        "label": "RISK_INDICATOR",
+        "text": "on blood thinners"
+      }
+    ],
+    "tokens": [
+      "Complaints",
+      "of",
+      "acute",
+      "chest",
+      "pain",
+      "localized",
+      "to",
+      "chest",
+      "for",
+      "past",
+      "2",
+      "weeks",
+      ",",
+      "diagnosed",
+      "with",
+      "on",
+      "blood",
+      "thinners",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "I-SYMPTOM",
+      "O",
+      "O",
+      "B-BODY_PART",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "O",
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O"
+    ],
+    "code_mixing_detected": false
+  },
+  {
+    "id": "PAT_0368",
+    "text": "Patient ge high blood pressure ide, beligge inda swalpa pet dard barthide.",
+    "language": "Kanglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 11,
+        "end": 30,
+        "label": "RISK_INDICATOR",
+        "text": "high blood pressure"
+      },
+      {
+        "start": 36,
+        "end": 48,
+        "label": "DURATION",
+        "text": "beligge inda"
+      },
+      {
+        "start": 49,
+        "end": 55,
+        "label": "SEVERITY",
+        "text": "swalpa"
+      },
+      {
+        "start": 56,
+        "end": 64,
+        "label": "SYMPTOM",
+        "text": "pet dard"
+      }
+    ],
+    "tokens": [
+      "Patient",
+      "ge",
+      "high",
+      "blood",
+      "pressure",
+      "ide",
+      ",",
+      "beligge",
+      "inda",
+      "swalpa",
+      "pet",
+      "dard",
+      "barthide",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O",
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "I-SYMPTOM",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0132",
+    "text": "Experiencing intense vomiting since morning, patient is a cancer patient.",
+    "language": "English",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 13,
+        "end": 20,
+        "label": "SEVERITY",
+        "text": "intense"
+      },
+      {
+        "start": 21,
+        "end": 29,
+        "label": "SYMPTOM",
+        "text": "vomiting"
+      },
+      {
+        "start": 30,
+        "end": 43,
+        "label": "DURATION",
+        "text": "since morning"
+      },
+      {
+        "start": 58,
+        "end": 72,
+        "label": "RISK_INDICATOR",
+        "text": "cancer patient"
+      }
+    ],
+    "tokens": [
+      "Experiencing",
+      "intense",
+      "vomiting",
+      "since",
+      "morning",
+      ",",
+      "patient",
+      "is",
+      "a",
+      "cancer",
+      "patient",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "B-DURATION",
+      "I-DURATION",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O"
+    ],
+    "code_mixing_detected": false
+  },
+  {
+    "id": "PAT_0332",
+    "text": "Mummy ko 3 days se severe saas lene mein dikkat hai aur unko chest pain radiating to arm ki history hai.",
+    "language": "Hinglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 9,
+        "end": 18,
+        "label": "DURATION",
+        "text": "3 days se"
+      },
+      {
+        "start": 19,
+        "end": 25,
+        "label": "SEVERITY",
+        "text": "severe"
+      },
+      {
+        "start": 26,
+        "end": 47,
+        "label": "SYMPTOM",
+        "text": "saas lene mein dikkat"
+      },
+      {
+        "start": 61,
+        "end": 88,
+        "label": "RISK_INDICATOR",
+        "text": "chest pain radiating to arm"
+      }
+    ],
+    "tokens": [
+      "Mummy",
+      "ko",
+      "3",
+      "days",
+      "se",
+      "severe",
+      "saas",
+      "lene",
+      "mein",
+      "dikkat",
+      "hai",
+      "aur",
+      "unko",
+      "chest",
+      "pain",
+      "radiating",
+      "to",
+      "arm",
+      "ki",
+      "history",
+      "hai",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "I-SYMPTOM",
+      "I-SYMPTOM",
+      "I-SYMPTOM",
+      "O",
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0235",
+    "text": "Complaints of moderate gala kharab localized to gala for 5 days, diagnosed with blood in cough.",
+    "language": "English",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 14,
+        "end": 22,
+        "label": "SEVERITY",
+        "text": "moderate"
+      },
+      {
+        "start": 23,
+        "end": 34,
+        "label": "SYMPTOM",
+        "text": "gala kharab"
+      },
+      {
+        "start": 48,
+        "end": 52,
+        "label": "BODY_PART",
+        "text": "gala"
+      },
+      {
+        "start": 53,
+        "end": 63,
+        "label": "DURATION",
+        "text": "for 5 days"
+      },
+      {
+        "start": 80,
+        "end": 94,
+        "label": "RISK_INDICATOR",
+        "text": "blood in cough"
+      }
+    ],
+    "tokens": [
+      "Complaints",
+      "of",
+      "moderate",
+      "gala",
+      "kharab",
+      "localized",
+      "to",
+      "gala",
+      "for",
+      "5",
+      "days",
+      ",",
+      "diagnosed",
+      "with",
+      "blood",
+      "in",
+      "cough",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "I-SYMPTOM",
+      "O",
+      "O",
+      "B-BODY_PART",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "O",
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O"
+    ],
+    "code_mixing_detected": false
+  },
+  {
+    "id": "PAT_0375",
+    "text": "Pichle kal raat se hotte novu bohot badh gaya hai, especially in hotte.",
+    "language": "Hinglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 7,
+        "end": 18,
+        "label": "DURATION",
+        "text": "kal raat se"
+      },
+      {
+        "start": 19,
+        "end": 29,
+        "label": "SYMPTOM",
+        "text": "hotte novu"
+      },
+      {
+        "start": 65,
+        "end": 70,
+        "label": "BODY_PART",
+        "text": "hotte"
+      }
+    ],
+    "tokens": [
+      "Pichle",
+      "kal",
+      "raat",
+      "se",
+      "hotte",
+      "novu",
+      "bohot",
+      "badh",
+      "gaya",
+      "hai",
+      ",",
+      "especially",
+      "in",
+      "hotte",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "B-SYMPTOM",
+      "I-SYMPTOM",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-BODY_PART",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0084",
+    "text": "Doctor, throat li unbearable cough ide ninne inda, patient is chest pain radiating to arm.",
+    "language": "Kanglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 8,
+        "end": 14,
+        "label": "BODY_PART",
+        "text": "throat"
+      },
+      {
+        "start": 18,
+        "end": 28,
+        "label": "SEVERITY",
+        "text": "unbearable"
+      },
+      {
+        "start": 29,
+        "end": 34,
+        "label": "SYMPTOM",
+        "text": "cough"
+      },
+      {
+        "start": 39,
+        "end": 49,
+        "label": "DURATION",
+        "text": "ninne inda"
+      },
+      {
+        "start": 62,
+        "end": 89,
+        "label": "RISK_INDICATOR",
+        "text": "chest pain radiating to arm"
+      }
+    ],
+    "tokens": [
+      "Doctor",
+      ",",
+      "throat",
+      "li",
+      "unbearable",
+      "cough",
+      "ide",
+      "ninne",
+      "inda",
+      ",",
+      "patient",
+      "is",
+      "chest",
+      "pain",
+      "radiating",
+      "to",
+      "arm",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "B-BODY_PART",
+      "O",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "O",
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0170",
+    "text": "Doctor sahab, body mein mild fever hai 3 days se, patient ko chest pain radiating to arm bhi hai.",
+    "language": "Hinglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 14,
+        "end": 18,
+        "label": "BODY_PART",
+        "text": "body"
+      },
+      {
+        "start": 24,
+        "end": 28,
+        "label": "SEVERITY",
+        "text": "mild"
+      },
+      {
+        "start": 29,
+        "end": 34,
+        "label": "SYMPTOM",
+        "text": "fever"
+      },
+      {
+        "start": 39,
+        "end": 48,
+        "label": "DURATION",
+        "text": "3 days se"
+      },
+      {
+        "start": 61,
+        "end": 88,
+        "label": "RISK_INDICATOR",
+        "text": "chest pain radiating to arm"
+      }
+    ],
+    "tokens": [
+      "Doctor",
+      "sahab",
+      ",",
+      "body",
+      "mein",
+      "mild",
+      "fever",
+      "hai",
+      "3",
+      "days",
+      "se",
+      ",",
+      "patient",
+      "ko",
+      "chest",
+      "pain",
+      "radiating",
+      "to",
+      "arm",
+      "bhi",
+      "hai",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "B-BODY_PART",
+      "O",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "O",
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0058",
+    "text": "Patient is chronic smoker, kal raat se se bohot zyada loose motion aur weakness feel ho rahi hai.",
+    "language": "Hinglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 11,
+        "end": 25,
+        "label": "RISK_INDICATOR",
+        "text": "chronic smoker"
+      },
+      {
+        "start": 27,
+        "end": 38,
+        "label": "DURATION",
+        "text": "kal raat se"
+      },
+      {
+        "start": 42,
+        "end": 53,
+        "label": "SEVERITY",
+        "text": "bohot zyada"
+      },
+      {
+        "start": 54,
+        "end": 66,
+        "label": "SYMPTOM",
+        "text": "loose motion"
+      }
+    ],
+    "tokens": [
+      "Patient",
+      "is",
+      "chronic",
+      "smoker",
+      ",",
+      "kal",
+      "raat",
+      "se",
+      "se",
+      "bohot",
+      "zyada",
+      "loose",
+      "motion",
+      "aur",
+      "weakness",
+      "feel",
+      "ho",
+      "rahi",
+      "hai",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "O",
+      "B-SEVERITY",
+      "I-SEVERITY",
+      "B-SYMPTOM",
+      "I-SYMPTOM",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0415",
+    "text": "Mummy ko kal raat se bahut tez hotte novu hai aur unko diabetic patient ki history hai.",
+    "language": "Hinglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 9,
+        "end": 20,
+        "label": "DURATION",
+        "text": "kal raat se"
+      },
+      {
+        "start": 21,
+        "end": 30,
+        "label": "SEVERITY",
+        "text": "bahut tez"
+      },
+      {
+        "start": 31,
+        "end": 41,
+        "label": "SYMPTOM",
+        "text": "hotte novu"
+      },
+      {
+        "start": 55,
+        "end": 71,
+        "label": "RISK_INDICATOR",
+        "text": "diabetic patient"
+      }
+    ],
+    "tokens": [
+      "Mummy",
+      "ko",
+      "kal",
+      "raat",
+      "se",
+      "bahut",
+      "tez",
+      "hotte",
+      "novu",
+      "hai",
+      "aur",
+      "unko",
+      "diabetic",
+      "patient",
+      "ki",
+      "history",
+      "hai",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "B-SEVERITY",
+      "I-SEVERITY",
+      "B-SYMPTOM",
+      "I-SYMPTOM",
+      "O",
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0099",
+    "text": "Doctor sahab, back mein bahut tez back pain hai do hafte se, patient ko asthma patient bhi hai.",
+    "language": "Hinglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 14,
+        "end": 18,
+        "label": "BODY_PART",
+        "text": "back"
+      },
+      {
+        "start": 24,
+        "end": 33,
+        "label": "SEVERITY",
+        "text": "bahut tez"
+      },
+      {
+        "start": 34,
+        "end": 43,
+        "label": "SYMPTOM",
+        "text": "back pain"
+      },
+      {
+        "start": 48,
+        "end": 59,
+        "label": "DURATION",
+        "text": "do hafte se"
+      },
+      {
+        "start": 72,
+        "end": 86,
+        "label": "RISK_INDICATOR",
+        "text": "asthma patient"
+      }
+    ],
+    "tokens": [
+      "Doctor",
+      "sahab",
+      ",",
+      "back",
+      "mein",
+      "bahut",
+      "tez",
+      "back",
+      "pain",
+      "hai",
+      "do",
+      "hafte",
+      "se",
+      ",",
+      "patient",
+      "ko",
+      "asthma",
+      "patient",
+      "bhi",
+      "hai",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "B-BODY_PART",
+      "O",
+      "B-SEVERITY",
+      "I-SEVERITY",
+      "B-SYMPTOM",
+      "I-SYMPTOM",
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "O",
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0140",
+    "text": "Experiencing slight kaalu novu for 3 days, patient is a diabetic patient.",
+    "language": "English",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 13,
+        "end": 19,
+        "label": "SEVERITY",
+        "text": "slight"
+      },
+      {
+        "start": 20,
+        "end": 30,
+        "label": "SYMPTOM",
+        "text": "kaalu novu"
+      },
+      {
+        "start": 31,
+        "end": 41,
+        "label": "DURATION",
+        "text": "for 3 days"
+      },
+      {
+        "start": 56,
+        "end": 72,
+        "label": "RISK_INDICATOR",
+        "text": "diabetic patient"
+      }
+    ],
+    "tokens": [
+      "Experiencing",
+      "slight",
+      "kaalu",
+      "novu",
+      "for",
+      "3",
+      "days",
+      ",",
+      "patient",
+      "is",
+      "a",
+      "diabetic",
+      "patient",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "I-SYMPTOM",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O"
+    ],
+    "code_mixing_detected": false
+  },
+  {
+    "id": "PAT_0240",
+    "text": "Sir leg me unbearable swelling hai kal raat se and I am a asthma patient.",
+    "language": "Hinglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 4,
+        "end": 7,
+        "label": "BODY_PART",
+        "text": "leg"
+      },
+      {
+        "start": 11,
+        "end": 21,
+        "label": "SEVERITY",
+        "text": "unbearable"
+      },
+      {
+        "start": 22,
+        "end": 30,
+        "label": "SYMPTOM",
+        "text": "swelling"
+      },
+      {
+        "start": 35,
+        "end": 46,
+        "label": "DURATION",
+        "text": "kal raat se"
+      },
+      {
+        "start": 58,
+        "end": 72,
+        "label": "RISK_INDICATOR",
+        "text": "asthma patient"
+      }
+    ],
+    "tokens": [
+      "Sir",
+      "leg",
+      "me",
+      "unbearable",
+      "swelling",
+      "hai",
+      "kal",
+      "raat",
+      "se",
+      "and",
+      "I",
+      "am",
+      "a",
+      "asthma",
+      "patient",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "B-BODY_PART",
+      "O",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0259",
+    "text": "Patient is blood in cough, kal raat se se acute breathlessness aur weakness feel ho rahi hai.",
+    "language": "Hinglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 11,
+        "end": 25,
+        "label": "RISK_INDICATOR",
+        "text": "blood in cough"
+      },
+      {
+        "start": 27,
+        "end": 38,
+        "label": "DURATION",
+        "text": "kal raat se"
+      },
+      {
+        "start": 42,
+        "end": 47,
+        "label": "SEVERITY",
+        "text": "acute"
+      },
+      {
+        "start": 48,
+        "end": 62,
+        "label": "SYMPTOM",
+        "text": "breathlessness"
+      }
+    ],
+    "tokens": [
+      "Patient",
+      "is",
+      "blood",
+      "in",
+      "cough",
+      ",",
+      "kal",
+      "raat",
+      "se",
+      "se",
+      "acute",
+      "breathlessness",
+      "aur",
+      "weakness",
+      "feel",
+      "ho",
+      "rahi",
+      "hai",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "O",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0069",
+    "text": "Complaints of slight loose motion localized to stomach for 5 days, diagnosed with hypertensive.",
+    "language": "English",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 14,
+        "end": 20,
+        "label": "SEVERITY",
+        "text": "slight"
+      },
+      {
+        "start": 21,
+        "end": 33,
+        "label": "SYMPTOM",
+        "text": "loose motion"
+      },
+      {
+        "start": 47,
+        "end": 54,
+        "label": "BODY_PART",
+        "text": "stomach"
+      },
+      {
+        "start": 55,
+        "end": 65,
+        "label": "DURATION",
+        "text": "for 5 days"
+      },
+      {
+        "start": 82,
+        "end": 94,
+        "label": "RISK_INDICATOR",
+        "text": "hypertensive"
+      }
+    ],
+    "tokens": [
+      "Complaints",
+      "of",
+      "slight",
+      "loose",
+      "motion",
+      "localized",
+      "to",
+      "stomach",
+      "for",
+      "5",
+      "days",
+      ",",
+      "diagnosed",
+      "with",
+      "hypertensive",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "I-SYMPTOM",
+      "O",
+      "O",
+      "B-BODY_PART",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "O",
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "O"
+    ],
+    "code_mixing_detected": false
+  },
+  {
+    "id": "PAT_0253",
+    "text": "Experiencing slight stomach pain for 3 days, patient is a chronic smoker.",
+    "language": "English",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 13,
+        "end": 19,
+        "label": "SEVERITY",
+        "text": "slight"
+      },
+      {
+        "start": 20,
+        "end": 32,
+        "label": "SYMPTOM",
+        "text": "stomach pain"
+      },
+      {
+        "start": 33,
+        "end": 43,
+        "label": "DURATION",
+        "text": "for 3 days"
+      },
+      {
+        "start": 58,
+        "end": 72,
+        "label": "RISK_INDICATOR",
+        "text": "chronic smoker"
+      }
+    ],
+    "tokens": [
+      "Experiencing",
+      "slight",
+      "stomach",
+      "pain",
+      "for",
+      "3",
+      "days",
+      ",",
+      "patient",
+      "is",
+      "a",
+      "chronic",
+      "smoker",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "I-SYMPTOM",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O"
+    ],
+    "code_mixing_detected": false
+  },
+  {
+    "id": "PAT_0269",
+    "text": "Nanage 3 dina inda swalpa chakkarr aagide, mathu sir novu thumba ide.",
+    "language": "Kanglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 7,
+        "end": 18,
+        "label": "DURATION",
+        "text": "3 dina inda"
+      },
+      {
+        "start": 19,
+        "end": 25,
+        "label": "SEVERITY",
+        "text": "swalpa"
+      },
+      {
+        "start": 26,
+        "end": 34,
+        "label": "SYMPTOM",
+        "text": "chakkarr"
+      },
+      {
+        "start": 49,
+        "end": 52,
+        "label": "BODY_PART",
+        "text": "sir"
+      }
+    ],
+    "tokens": [
+      "Nanage",
+      "3",
+      "dina",
+      "inda",
+      "swalpa",
+      "chakkarr",
+      "aagide",
+      ",",
+      "mathu",
+      "sir",
+      "novu",
+      "thumba",
+      "ide",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "O",
+      "O",
+      "O",
+      "B-BODY_PART",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0279",
+    "text": "Complaints of acute chest pain localized to chest for past 2 weeks, diagnosed with on blood thinners.",
+    "language": "English",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 14,
+        "end": 19,
+        "label": "SEVERITY",
+        "text": "acute"
+      },
+      {
+        "start": 20,
+        "end": 30,
+        "label": "SYMPTOM",
+        "text": "chest pain"
+      },
+      {
+        "start": 44,
+        "end": 49,
+        "label": "BODY_PART",
+        "text": "chest"
+      },
+      {
+        "start": 50,
+        "end": 66,
+        "label": "DURATION",
+        "text": "for past 2 weeks"
+      },
+      {
+        "start": 83,
+        "end": 100,
+        "label": "RISK_INDICATOR",
+        "text": "on blood thinners"
+      }
+    ],
+    "tokens": [
+      "Complaints",
+      "of",
+      "acute",
+      "chest",
+      "pain",
+      "localized",
+      "to",
+      "chest",
+      "for",
+      "past",
+      "2",
+      "weeks",
+      ",",
+      "diagnosed",
+      "with",
+      "on",
+      "blood",
+      "thinners",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "I-SYMPTOM",
+      "O",
+      "O",
+      "B-BODY_PART",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "O",
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O"
+    ],
+    "code_mixing_detected": false
+  },
+  {
+    "id": "PAT_0329",
+    "text": "Mummy ko 3 days se severe breathlessness hai aur unko hypertensive ki history hai.",
+    "language": "Hinglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 9,
+        "end": 18,
+        "label": "DURATION",
+        "text": "3 days se"
+      },
+      {
+        "start": 19,
+        "end": 25,
+        "label": "SEVERITY",
+        "text": "severe"
+      },
+      {
+        "start": 26,
+        "end": 40,
+        "label": "SYMPTOM",
+        "text": "breathlessness"
+      },
+      {
+        "start": 54,
+        "end": 66,
+        "label": "RISK_INDICATOR",
+        "text": "hypertensive"
+      }
+    ],
+    "tokens": [
+      "Mummy",
+      "ko",
+      "3",
+      "days",
+      "se",
+      "severe",
+      "breathlessness",
+      "hai",
+      "aur",
+      "unko",
+      "hypertensive",
+      "ki",
+      "history",
+      "hai",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "O",
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0233",
+    "text": "Experiencing intense kampa for 3 days, patient is a pregnant 7 months.",
+    "language": "English",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 13,
+        "end": 20,
+        "label": "SEVERITY",
+        "text": "intense"
+      },
+      {
+        "start": 21,
+        "end": 26,
+        "label": "SYMPTOM",
+        "text": "kampa"
+      },
+      {
+        "start": 27,
+        "end": 37,
+        "label": "DURATION",
+        "text": "for 3 days"
+      },
+      {
+        "start": 52,
+        "end": 69,
+        "label": "RISK_INDICATOR",
+        "text": "pregnant 7 months"
+      }
+    ],
+    "tokens": [
+      "Experiencing",
+      "intense",
+      "kampa",
+      "for",
+      "3",
+      "days",
+      ",",
+      "patient",
+      "is",
+      "a",
+      "pregnant",
+      "7",
+      "months",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O"
+    ],
+    "code_mixing_detected": false
+  },
+  {
+    "id": "PAT_0146",
+    "text": "Enaku 2 weeks ah romba dizziness irukku, head romba valikuthu.",
+    "language": "Tanglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 6,
+        "end": 16,
+        "label": "DURATION",
+        "text": "2 weeks ah"
+      },
+      {
+        "start": 17,
+        "end": 22,
+        "label": "SEVERITY",
+        "text": "romba"
+      },
+      {
+        "start": 23,
+        "end": 32,
+        "label": "SYMPTOM",
+        "text": "dizziness"
+      },
+      {
+        "start": 41,
+        "end": 45,
+        "label": "BODY_PART",
+        "text": "head"
+      },
+      {
+        "start": 46,
+        "end": 51,
+        "label": "SEVERITY",
+        "text": "romba"
+      }
+    ],
+    "tokens": [
+      "Enaku",
+      "2",
+      "weeks",
+      "ah",
+      "romba",
+      "dizziness",
+      "irukku",
+      ",",
+      "head",
+      "romba",
+      "valikuthu",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "O",
+      "O",
+      "B-BODY_PART",
+      "B-SEVERITY",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0172",
+    "text": "Enaku kalaila irundhu romba fever irukku, body romba valikuthu.",
+    "language": "Tanglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 6,
+        "end": 21,
+        "label": "DURATION",
+        "text": "kalaila irundhu"
+      },
+      {
+        "start": 22,
+        "end": 27,
+        "label": "SEVERITY",
+        "text": "romba"
+      },
+      {
+        "start": 28,
+        "end": 33,
+        "label": "SYMPTOM",
+        "text": "fever"
+      },
+      {
+        "start": 42,
+        "end": 46,
+        "label": "BODY_PART",
+        "text": "body"
+      },
+      {
+        "start": 47,
+        "end": 52,
+        "label": "SEVERITY",
+        "text": "romba"
+      }
+    ],
+    "tokens": [
+      "Enaku",
+      "kalaila",
+      "irundhu",
+      "romba",
+      "fever",
+      "irukku",
+      ",",
+      "body",
+      "romba",
+      "valikuthu",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "O",
+      "O",
+      "B-BODY_PART",
+      "B-SEVERITY",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0055",
+    "text": "Patient ge diabetic patient ide, 3 dina inda severe pet dard barthide.",
+    "language": "Kanglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 11,
+        "end": 27,
+        "label": "RISK_INDICATOR",
+        "text": "diabetic patient"
+      },
+      {
+        "start": 33,
+        "end": 44,
+        "label": "DURATION",
+        "text": "3 dina inda"
+      },
+      {
+        "start": 45,
+        "end": 51,
+        "label": "SEVERITY",
+        "text": "severe"
+      },
+      {
+        "start": 52,
+        "end": 60,
+        "label": "SYMPTOM",
+        "text": "pet dard"
+      }
+    ],
+    "tokens": [
+      "Patient",
+      "ge",
+      "diabetic",
+      "patient",
+      "ide",
+      ",",
+      "3",
+      "dina",
+      "inda",
+      "severe",
+      "pet",
+      "dard",
+      "barthide",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O",
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "I-SYMPTOM",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0309",
+    "text": "Patient ku on blood thinners irukku, one month ah chinna shivering irukku.",
+    "language": "Tanglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 11,
+        "end": 28,
+        "label": "RISK_INDICATOR",
+        "text": "on blood thinners"
+      },
+      {
+        "start": 37,
+        "end": 49,
+        "label": "DURATION",
+        "text": "one month ah"
+      },
+      {
+        "start": 50,
+        "end": 56,
+        "label": "SEVERITY",
+        "text": "chinna"
+      },
+      {
+        "start": 57,
+        "end": 66,
+        "label": "SYMPTOM",
+        "text": "shivering"
+      }
+    ],
+    "tokens": [
+      "Patient",
+      "ku",
+      "on",
+      "blood",
+      "thinners",
+      "irukku",
+      ",",
+      "one",
+      "month",
+      "ah",
+      "chinna",
+      "shivering",
+      "irukku",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O",
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0291",
+    "text": "Nanna friend ge eradu varada inda swalpa cough aagide, he has blood in cough.",
+    "language": "Kanglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 16,
+        "end": 33,
+        "label": "DURATION",
+        "text": "eradu varada inda"
+      },
+      {
+        "start": 34,
+        "end": 40,
+        "label": "SEVERITY",
+        "text": "swalpa"
+      },
+      {
+        "start": 41,
+        "end": 46,
+        "label": "SYMPTOM",
+        "text": "cough"
+      },
+      {
+        "start": 71,
+        "end": 76,
+        "label": "SYMPTOM",
+        "text": "cough"
+      }
+    ],
+    "tokens": [
+      "Nanna",
+      "friend",
+      "ge",
+      "eradu",
+      "varada",
+      "inda",
+      "swalpa",
+      "cough",
+      "aagide",
+      ",",
+      "he",
+      "has",
+      "blood",
+      "in",
+      "cough",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SYMPTOM",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0153",
+    "text": "Complaints of slight breathlessness localized to chest since morning, diagnosed with pregnant 7 months.",
+    "language": "English",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 14,
+        "end": 20,
+        "label": "SEVERITY",
+        "text": "slight"
+      },
+      {
+        "start": 21,
+        "end": 35,
+        "label": "SYMPTOM",
+        "text": "breathlessness"
+      },
+      {
+        "start": 49,
+        "end": 54,
+        "label": "BODY_PART",
+        "text": "chest"
+      },
+      {
+        "start": 55,
+        "end": 68,
+        "label": "DURATION",
+        "text": "since morning"
+      },
+      {
+        "start": 85,
+        "end": 102,
+        "label": "RISK_INDICATOR",
+        "text": "pregnant 7 months"
+      }
+    ],
+    "tokens": [
+      "Complaints",
+      "of",
+      "slight",
+      "breathlessness",
+      "localized",
+      "to",
+      "chest",
+      "since",
+      "morning",
+      ",",
+      "diagnosed",
+      "with",
+      "pregnant",
+      "7",
+      "months",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "O",
+      "O",
+      "B-BODY_PART",
+      "B-DURATION",
+      "I-DURATION",
+      "O",
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O"
+    ],
+    "code_mixing_detected": false
+  },
+  {
+    "id": "PAT_0005",
+    "text": "Bhai mujhe pichle 1 week se continuous ulti aur loose motion ho raha hai, feeling very weak.",
+    "language": "Hinglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 11,
+        "end": 24,
+        "label": "DURATION",
+        "text": "pichle 1 week"
+      },
+      {
+        "start": 28,
+        "end": 38,
+        "label": "SEVERITY",
+        "text": "continuous"
+      },
+      {
+        "start": 39,
+        "end": 43,
+        "label": "SYMPTOM",
+        "text": "ulti"
+      },
+      {
+        "start": 48,
+        "end": 60,
+        "label": "SYMPTOM",
+        "text": "loose motion"
+      },
+      {
+        "start": 82,
+        "end": 91,
+        "label": "SYMPTOM",
+        "text": "very weak"
+      }
+    ],
+    "tokens": [
+      "Bhai",
+      "mujhe",
+      "pichle",
+      "1",
+      "week",
+      "se",
+      "continuous",
+      "ulti",
+      "aur",
+      "loose",
+      "motion",
+      "ho",
+      "raha",
+      "hai",
+      ",",
+      "feeling",
+      "very",
+      "weak",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "O",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "O",
+      "B-SYMPTOM",
+      "I-SYMPTOM",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SYMPTOM",
+      "I-SYMPTOM",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0449",
+    "text": "Experiencing slight headache for past 2 weeks, patient is a blood in cough.",
+    "language": "English",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 13,
+        "end": 19,
+        "label": "SEVERITY",
+        "text": "slight"
+      },
+      {
+        "start": 20,
+        "end": 28,
+        "label": "SYMPTOM",
+        "text": "headache"
+      },
+      {
+        "start": 29,
+        "end": 45,
+        "label": "DURATION",
+        "text": "for past 2 weeks"
+      },
+      {
+        "start": 60,
+        "end": 74,
+        "label": "RISK_INDICATOR",
+        "text": "blood in cough"
+      }
+    ],
+    "tokens": [
+      "Experiencing",
+      "slight",
+      "headache",
+      "for",
+      "past",
+      "2",
+      "weeks",
+      ",",
+      "patient",
+      "is",
+      "a",
+      "blood",
+      "in",
+      "cough",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O"
+    ],
+    "code_mixing_detected": false
+  },
+  {
+    "id": "PAT_0149",
+    "text": "Doctor sahab, sir mein bohot zyada chakkarr hai do hafte se, patient ko blood in cough bhi hai.",
+    "language": "Hinglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 14,
+        "end": 17,
+        "label": "BODY_PART",
+        "text": "sir"
+      },
+      {
+        "start": 23,
+        "end": 34,
+        "label": "SEVERITY",
+        "text": "bohot zyada"
+      },
+      {
+        "start": 35,
+        "end": 43,
+        "label": "SYMPTOM",
+        "text": "chakkarr"
+      },
+      {
+        "start": 48,
+        "end": 59,
+        "label": "DURATION",
+        "text": "do hafte se"
+      },
+      {
+        "start": 72,
+        "end": 86,
+        "label": "RISK_INDICATOR",
+        "text": "blood in cough"
+      }
+    ],
+    "tokens": [
+      "Doctor",
+      "sahab",
+      ",",
+      "sir",
+      "mein",
+      "bohot",
+      "zyada",
+      "chakkarr",
+      "hai",
+      "do",
+      "hafte",
+      "se",
+      ",",
+      "patient",
+      "ko",
+      "blood",
+      "in",
+      "cough",
+      "bhi",
+      "hai",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "B-BODY_PART",
+      "O",
+      "B-SEVERITY",
+      "I-SEVERITY",
+      "B-SYMPTOM",
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "O",
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0384",
+    "text": "Complaints of slight shivering localized to body for 5 days, diagnosed with hypertensive.",
+    "language": "English",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 14,
+        "end": 20,
+        "label": "SEVERITY",
+        "text": "slight"
+      },
+      {
+        "start": 21,
+        "end": 30,
+        "label": "SYMPTOM",
+        "text": "shivering"
+      },
+      {
+        "start": 44,
+        "end": 48,
+        "label": "BODY_PART",
+        "text": "body"
+      },
+      {
+        "start": 49,
+        "end": 59,
+        "label": "DURATION",
+        "text": "for 5 days"
+      },
+      {
+        "start": 76,
+        "end": 88,
+        "label": "RISK_INDICATOR",
+        "text": "hypertensive"
+      }
+    ],
+    "tokens": [
+      "Complaints",
+      "of",
+      "slight",
+      "shivering",
+      "localized",
+      "to",
+      "body",
+      "for",
+      "5",
+      "days",
+      ",",
+      "diagnosed",
+      "with",
+      "hypertensive",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "O",
+      "O",
+      "B-BODY_PART",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "O",
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "O"
+    ],
+    "code_mixing_detected": false
+  },
+  {
+    "id": "PAT_0096",
+    "text": "Patient is pregnant 7 months, do hafte se se bohot zyada chest pain aur weakness feel ho rahi hai.",
+    "language": "Hinglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 11,
+        "end": 28,
+        "label": "RISK_INDICATOR",
+        "text": "pregnant 7 months"
+      },
+      {
+        "start": 30,
+        "end": 41,
+        "label": "DURATION",
+        "text": "do hafte se"
+      },
+      {
+        "start": 45,
+        "end": 56,
+        "label": "SEVERITY",
+        "text": "bohot zyada"
+      },
+      {
+        "start": 57,
+        "end": 67,
+        "label": "SYMPTOM",
+        "text": "chest pain"
+      }
+    ],
+    "tokens": [
+      "Patient",
+      "is",
+      "pregnant",
+      "7",
+      "months",
+      ",",
+      "do",
+      "hafte",
+      "se",
+      "se",
+      "bohot",
+      "zyada",
+      "chest",
+      "pain",
+      "aur",
+      "weakness",
+      "feel",
+      "ho",
+      "rahi",
+      "hai",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "O",
+      "B-SEVERITY",
+      "I-SEVERITY",
+      "B-SYMPTOM",
+      "I-SYMPTOM",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0254",
+    "text": "Patient ge previous heart attack ide, ninne inda severe kampa barthide.",
+    "language": "Kanglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 11,
+        "end": 32,
+        "label": "RISK_INDICATOR",
+        "text": "previous heart attack"
+      },
+      {
+        "start": 38,
+        "end": 48,
+        "label": "DURATION",
+        "text": "ninne inda"
+      },
+      {
+        "start": 49,
+        "end": 55,
+        "label": "SEVERITY",
+        "text": "severe"
+      },
+      {
+        "start": 56,
+        "end": 61,
+        "label": "SYMPTOM",
+        "text": "kampa"
+      }
+    ],
+    "tokens": [
+      "Patient",
+      "ge",
+      "previous",
+      "heart",
+      "attack",
+      "ide",
+      ",",
+      "ninne",
+      "inda",
+      "severe",
+      "kampa",
+      "barthide",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O",
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0404",
+    "text": "Sir joints me mild joint pain hai 3 days se and I am a previous heart attack.",
+    "language": "Hinglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 4,
+        "end": 10,
+        "label": "BODY_PART",
+        "text": "joints"
+      },
+      {
+        "start": 14,
+        "end": 18,
+        "label": "SEVERITY",
+        "text": "mild"
+      },
+      {
+        "start": 19,
+        "end": 29,
+        "label": "SYMPTOM",
+        "text": "joint pain"
+      },
+      {
+        "start": 34,
+        "end": 43,
+        "label": "DURATION",
+        "text": "3 days se"
+      },
+      {
+        "start": 55,
+        "end": 76,
+        "label": "RISK_INDICATOR",
+        "text": "previous heart attack"
+      }
+    ],
+    "tokens": [
+      "Sir",
+      "joints",
+      "me",
+      "mild",
+      "joint",
+      "pain",
+      "hai",
+      "3",
+      "days",
+      "se",
+      "and",
+      "I",
+      "am",
+      "a",
+      "previous",
+      "heart",
+      "attack",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "B-BODY_PART",
+      "O",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "I-SYMPTOM",
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0204",
+    "text": "Mujhe ek hafte se bahut tez shivering ho raha hai aur body mein dard hai.",
+    "language": "Hinglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 6,
+        "end": 17,
+        "label": "DURATION",
+        "text": "ek hafte se"
+      },
+      {
+        "start": 18,
+        "end": 27,
+        "label": "SEVERITY",
+        "text": "bahut tez"
+      },
+      {
+        "start": 28,
+        "end": 37,
+        "label": "SYMPTOM",
+        "text": "shivering"
+      },
+      {
+        "start": 54,
+        "end": 58,
+        "label": "BODY_PART",
+        "text": "body"
+      }
+    ],
+    "tokens": [
+      "Mujhe",
+      "ek",
+      "hafte",
+      "se",
+      "bahut",
+      "tez",
+      "shivering",
+      "ho",
+      "raha",
+      "hai",
+      "aur",
+      "body",
+      "mein",
+      "dard",
+      "hai",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "B-SEVERITY",
+      "I-SEVERITY",
+      "B-SYMPTOM",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-BODY_PART",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0446",
+    "text": "Doctor sahab, chest mein halka halka chest pain hai subah se, patient ko unconscious bhi hai.",
+    "language": "Hinglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 14,
+        "end": 19,
+        "label": "BODY_PART",
+        "text": "chest"
+      },
+      {
+        "start": 25,
+        "end": 36,
+        "label": "SEVERITY",
+        "text": "halka halka"
+      },
+      {
+        "start": 37,
+        "end": 47,
+        "label": "SYMPTOM",
+        "text": "chest pain"
+      },
+      {
+        "start": 52,
+        "end": 60,
+        "label": "DURATION",
+        "text": "subah se"
+      },
+      {
+        "start": 73,
+        "end": 84,
+        "label": "RISK_INDICATOR",
+        "text": "unconscious"
+      }
+    ],
+    "tokens": [
+      "Doctor",
+      "sahab",
+      ",",
+      "chest",
+      "mein",
+      "halka",
+      "halka",
+      "chest",
+      "pain",
+      "hai",
+      "subah",
+      "se",
+      ",",
+      "patient",
+      "ko",
+      "unconscious",
+      "bhi",
+      "hai",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "B-BODY_PART",
+      "O",
+      "B-SEVERITY",
+      "I-SEVERITY",
+      "B-SYMPTOM",
+      "I-SYMPTOM",
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "O",
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "O",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0019",
+    "text": "Mujhe subah se bohot zyada kaalu novu ho raha hai aur kaalu mein dard hai.",
+    "language": "Hinglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 6,
+        "end": 14,
+        "label": "DURATION",
+        "text": "subah se"
+      },
+      {
+        "start": 15,
+        "end": 26,
+        "label": "SEVERITY",
+        "text": "bohot zyada"
+      },
+      {
+        "start": 27,
+        "end": 37,
+        "label": "SYMPTOM",
+        "text": "kaalu novu"
+      },
+      {
+        "start": 54,
+        "end": 59,
+        "label": "BODY_PART",
+        "text": "kaalu"
+      }
+    ],
+    "tokens": [
+      "Mujhe",
+      "subah",
+      "se",
+      "bohot",
+      "zyada",
+      "kaalu",
+      "novu",
+      "ho",
+      "raha",
+      "hai",
+      "aur",
+      "kaalu",
+      "mein",
+      "dard",
+      "hai",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "B-SEVERITY",
+      "I-SEVERITY",
+      "B-SYMPTOM",
+      "I-SYMPTOM",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-BODY_PART",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0091",
+    "text": "Doctor sahab, head mein acute headache hai do hafte se, patient ko previous heart attack bhi hai.",
+    "language": "Hinglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 14,
+        "end": 18,
+        "label": "BODY_PART",
+        "text": "head"
+      },
+      {
+        "start": 24,
+        "end": 29,
+        "label": "SEVERITY",
+        "text": "acute"
+      },
+      {
+        "start": 30,
+        "end": 38,
+        "label": "SYMPTOM",
+        "text": "headache"
+      },
+      {
+        "start": 43,
+        "end": 54,
+        "label": "DURATION",
+        "text": "do hafte se"
+      },
+      {
+        "start": 67,
+        "end": 88,
+        "label": "RISK_INDICATOR",
+        "text": "previous heart attack"
+      }
+    ],
+    "tokens": [
+      "Doctor",
+      "sahab",
+      ",",
+      "head",
+      "mein",
+      "acute",
+      "headache",
+      "hai",
+      "do",
+      "hafte",
+      "se",
+      ",",
+      "patient",
+      "ko",
+      "previous",
+      "heart",
+      "attack",
+      "bhi",
+      "hai",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "B-BODY_PART",
+      "O",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "O",
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0429",
+    "text": "Nanna friend ge 3 dina inda heavy khansi aagide, he has diabetic patient.",
+    "language": "Kanglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 16,
+        "end": 27,
+        "label": "DURATION",
+        "text": "3 dina inda"
+      },
+      {
+        "start": 28,
+        "end": 33,
+        "label": "SEVERITY",
+        "text": "heavy"
+      },
+      {
+        "start": 34,
+        "end": 40,
+        "label": "SYMPTOM",
+        "text": "khansi"
+      },
+      {
+        "start": 56,
+        "end": 72,
+        "label": "RISK_INDICATOR",
+        "text": "diabetic patient"
+      }
+    ],
+    "tokens": [
+      "Nanna",
+      "friend",
+      "ge",
+      "3",
+      "dina",
+      "inda",
+      "heavy",
+      "khansi",
+      "aagide",
+      ",",
+      "he",
+      "has",
+      "diabetic",
+      "patient",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0214",
+    "text": "Patient ku hypertensive irukku, kalaila irundhu chinna shivering irukku.",
+    "language": "Tanglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 11,
+        "end": 23,
+        "label": "RISK_INDICATOR",
+        "text": "hypertensive"
+      },
+      {
+        "start": 32,
+        "end": 47,
+        "label": "DURATION",
+        "text": "kalaila irundhu"
+      },
+      {
+        "start": 48,
+        "end": 54,
+        "label": "SEVERITY",
+        "text": "chinna"
+      },
+      {
+        "start": 55,
+        "end": 64,
+        "label": "SYMPTOM",
+        "text": "shivering"
+      }
+    ],
+    "tokens": [
+      "Patient",
+      "ku",
+      "hypertensive",
+      "irukku",
+      ",",
+      "kalaila",
+      "irundhu",
+      "chinna",
+      "shivering",
+      "irukku",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "O",
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0090",
+    "text": "Complaints of mild vomiting localized to stomach for the last 48 hours, diagnosed with hypertensive.",
+    "language": "English",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 14,
+        "end": 18,
+        "label": "SEVERITY",
+        "text": "mild"
+      },
+      {
+        "start": 19,
+        "end": 27,
+        "label": "SYMPTOM",
+        "text": "vomiting"
+      },
+      {
+        "start": 41,
+        "end": 48,
+        "label": "BODY_PART",
+        "text": "stomach"
+      },
+      {
+        "start": 49,
+        "end": 70,
+        "label": "DURATION",
+        "text": "for the last 48 hours"
+      },
+      {
+        "start": 87,
+        "end": 99,
+        "label": "RISK_INDICATOR",
+        "text": "hypertensive"
+      }
+    ],
+    "tokens": [
+      "Complaints",
+      "of",
+      "mild",
+      "vomiting",
+      "localized",
+      "to",
+      "stomach",
+      "for",
+      "the",
+      "last",
+      "48",
+      "hours",
+      ",",
+      "diagnosed",
+      "with",
+      "hypertensive",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "O",
+      "O",
+      "B-BODY_PART",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "O",
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "O"
+    ],
+    "code_mixing_detected": false
+  },
+  {
+    "id": "PAT_0020",
+    "text": "Nanage last 2 days inda severe cough aagide, mathu throat novu thumba ide.",
+    "language": "Kanglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 7,
+        "end": 23,
+        "label": "DURATION",
+        "text": "last 2 days inda"
+      },
+      {
+        "start": 24,
+        "end": 30,
+        "label": "SEVERITY",
+        "text": "severe"
+      },
+      {
+        "start": 31,
+        "end": 36,
+        "label": "SYMPTOM",
+        "text": "cough"
+      },
+      {
+        "start": 51,
+        "end": 57,
+        "label": "BODY_PART",
+        "text": "throat"
+      }
+    ],
+    "tokens": [
+      "Nanage",
+      "last",
+      "2",
+      "days",
+      "inda",
+      "severe",
+      "cough",
+      "aagide",
+      ",",
+      "mathu",
+      "throat",
+      "novu",
+      "thumba",
+      "ide",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "O",
+      "O",
+      "O",
+      "B-BODY_PART",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  },
+  {
+    "id": "PAT_0436",
+    "text": "Patient ge asthma patient ide, 3 dina inda swalpa kaalu novu barthide.",
+    "language": "Kanglish",
+    "script": "Latin",
+    "entities": [
+      {
+        "start": 11,
+        "end": 25,
+        "label": "RISK_INDICATOR",
+        "text": "asthma patient"
+      },
+      {
+        "start": 31,
+        "end": 42,
+        "label": "DURATION",
+        "text": "3 dina inda"
+      },
+      {
+        "start": 43,
+        "end": 49,
+        "label": "SEVERITY",
+        "text": "swalpa"
+      },
+      {
+        "start": 50,
+        "end": 60,
+        "label": "SYMPTOM",
+        "text": "kaalu novu"
+      }
+    ],
+    "tokens": [
+      "Patient",
+      "ge",
+      "asthma",
+      "patient",
+      "ide",
+      ",",
+      "3",
+      "dina",
+      "inda",
+      "swalpa",
+      "kaalu",
+      "novu",
+      "barthide",
+      "."
+    ],
+    "bio_tags": [
+      "O",
+      "O",
+      "B-RISK_INDICATOR",
+      "I-RISK_INDICATOR",
+      "O",
+      "O",
+      "B-DURATION",
+      "I-DURATION",
+      "I-DURATION",
+      "B-SEVERITY",
+      "B-SYMPTOM",
+      "I-SYMPTOM",
+      "O",
+      "O"
+    ],
+    "code_mixing_detected": true
+  }
+]

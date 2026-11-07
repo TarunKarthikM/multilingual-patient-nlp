@@ -1,0 +1,29 @@
+{
+  "total_patient_records": 450,
+  "train_records": 315,
+  "val_records": 67,
+  "test_records": 68,
+  "total_tokens": 7467,
+  "language_distribution": {
+    "Hinglish": 194,
+    "Tanglish": 61,
+    "English": 93,
+    "Kanglish": 100,
+    "Hindi-Mixed": 1,
+    "Kannada-Mixed": 1
+  },
+  "entity_distribution": {
+    "DURATION": 451,
+    "SEVERITY": 432,
+    "SYMPTOM": 468,
+    "BODY_PART": 273,
+    "RISK_INDICATOR": 340
+  },
+  "target_entity_types": [
+    "SYMPTOM",
+    "RISK_INDICATOR",
+    "SEVERITY",
+    "DURATION",
+    "BODY_PART"
+  ]
+}
